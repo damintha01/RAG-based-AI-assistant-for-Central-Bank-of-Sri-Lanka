@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Bank Regulatory AI Assistant</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            
+            <div class="header-text">
+                <h1>Central Bank of Sri Lanka - Regulatory AI Assistant</h1>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-grid">
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2>💬 Chat Assistant</h2>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Welcome Message -->
+                    <div class="welcome-message">
+                        <h3>Welcome to the Central Bank Regulatory Assistant</h3>
+                        <p>Ask me anything about Sri Lankan banking regulations, monetary policies, and financial stability.</p>
+                        
+                        <div class="welcome-suggestions">
+                            <div class="suggestion-card">
+                                <h4>Capital Requirements</h4>
+                                <p>What are capital adequacy requirements?</p>
+                            </div>
+                            <div class="suggestion-card">
+                                <h4>Financial Stability</h4>
+                                <p>What is the current financial stability outlook?</p>
+                            </div>
+                            <div class="suggestion-card">
+                                <h4>Monetary Policy</h4>
+                                <p>What are the recent monetary policy changes?</p>
+                            </div>
+                            <div class="suggestion-card">
+                                <h4> Banking Regulations</h4>
+                                <p>What are the key banking regulations?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <span>Processing your question...</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="input-group">
+                            <textarea 
+                                id="questionInput" 
+                                placeholder="Ask a question about regulations, policies, or banking requirements..."
+                                rows="1"
+                            ></textarea>
+                        </div>
+                        <button id="sendBtn" class="btn btn-primary">
+                            <span>Send</span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Stats Card -->
+                <div class="card">
+                    <div class="card-header">
+                         Statistics
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Messages</span>
+                        <span class="stat-value" id="msgCount">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Documents</span>
+                        <span class="stat-value" id="docCount">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Status</span>
+                        <span class="stat-value" style="color: #31c491; font-size: 1rem;">● Online</span>
+                    </div>
+                </div>
+
+                <!-- Documents Card -->
+                <div class="card">
+                    <div class="card-header">
+                         Available Documents
+                    </div>
+                    <div class="document-list" id="documentList">
+                        <div class="document-item">
+                            <span class="document-icon"></span>
+                            Loading documents...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="card">
+                    <div class="card-header">
+                         Quick Actions
+                    </div>
+                    <button class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;" id="clearBtn">
+                         Clear Chat
+                    </button>
+                   
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
