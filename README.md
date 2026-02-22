@@ -93,9 +93,6 @@ A Retrieval-Augmented Generation (RAG) AI assistant that provides accurate, cont
 └── requirements.txt      # Python dependencies
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
